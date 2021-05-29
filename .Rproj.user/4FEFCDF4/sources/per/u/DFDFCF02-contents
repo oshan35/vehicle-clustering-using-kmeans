@@ -1,0 +1,17 @@
+install.packages("readxl")
+install.packages("dplyr")
+install.packages("ggplot2")
+install.packages("ggfortify")
+install.packages("tidyverse")
+
+library(stats)
+library(dplyr)
+library(ggplot2)
+library(ggfortify)
+library(readxl)
+library(tidyverse)
+
+vehicles <- read_excel("vehicles.xlsx")
+View(vehicles)
+
+vehciles_data = select.list(vehicles,c(1,2,3))
